@@ -4,7 +4,7 @@ This guide will walk you through creating a block plugin that can be used in pag
 
 ## Prerequisites
 
-Before getting started, make sure you have successfully installed NocoBase. If not, you can refer to the following installation guides:
+Before getting started, make sure you have Node.js 20+ installed and have successfully installed NocoBase.. If not, you can refer to the following installation guides:
 
 - [Install using create-nocobase-app](/get-started/installation/create-nocobase-app)
 - [Install from Git source](/get-started/installation/git)
@@ -21,7 +21,7 @@ yarn pm create @my-project/plugin-hello
 
 After the command runs successfully, it will generate basic files in the `packages/plugins/@my-project/plugin-hello` directory. The default structure is as follows:
 
-```bash
+```text
 ├─ /packages/plugins/@my-project/plugin-hello
   ├─ package.json
   ├─ README.md
@@ -96,7 +96,7 @@ export default {
 
 After saving the code, if you're running a development script, you should see hot-reload logs in the terminal output.
 
-## Step 3: Activate and Test the Plugin
+## Step 3: Enable and Test the Plugin
 
 You can enable the plugin via command line or interface:
 
@@ -106,9 +106,9 @@ You can enable the plugin via command line or interface:
   yarn pm enable @my-project/plugin-hello
   ```
 
-- **Management Interface**: Access the plugin manager, find `@my-project/plugin-hello`, and click "Activate".
+- **Management Interface**: Access the plugin manager, find `@my-project/plugin-hello`, and click "Enable".
 
-After activation, create a new "Modern page (v2)" page. When adding blocks, you'll see "Hello block". Insert it into the page to see the welcome content you just wrote.
+After enabling the plugin, create a new "Modern page (v2)" page. When adding blocks, you'll see "Hello block". Insert it into the page to see the welcome content you just wrote.
 
 ![20250928174529](https://static-docs.nocobase.com/20250928174529.png)
 
